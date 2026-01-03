@@ -3,7 +3,11 @@
 A Flask REST API for tracking heroes and their superpowers, built as part of Phase 4 Code Challenge.
 
 ## Author
-**Your Name** - *Initial work*
+**Kenneth Kipkosgei** - *Full Stack Developer*
+
+## About
+
+This project demonstrates proficiency in building RESTful APIs using Flask, SQLAlchemy, and related technologies. It showcases proper database design with relationships, data validation, email integration, and follows industry best practices for API development. The application provides a complete backend solution for managing superhero data with comprehensive CRUD operations and email notifications.
 
 ## Description
 
@@ -151,8 +155,8 @@ For production deployment:
 ## Support
 
 For support or questions, please contact:
-- Email: your-email@example.com
-- GitHub: [Your GitHub Profile](https://github.com/yourusername)
+- Email: kenneth.kipkosgei@example.com
+- GitHub: [Kenneth Kipkosgei](https://github.com/Kenneth-kipkosgei)
 
 ## License
 

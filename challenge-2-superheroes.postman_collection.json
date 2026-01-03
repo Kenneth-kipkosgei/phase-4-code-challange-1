@@ -1,0 +1,117 @@
+{
+  "info": {
+    "name": "Superheroes API",
+    "description": "Collection for testing the Superheroes API endpoints",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Get All Heroes",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url}}/heroes",
+          "host": ["{{base_url}}"],
+          "path": ["heroes"]
+        }
+      }
+    },
+    {
+      "name": "Get Hero by ID",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url}}/heroes/1",
+          "host": ["{{base_url}}"],
+          "path": ["heroes", "1"]
+        }
+      }
+    },
+    {
+      "name": "Get All Powers",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url}}/powers",
+          "host": ["{{base_url}}"],
+          "path": ["powers"]
+        }
+      }
+    },
+    {
+      "name": "Get Power by ID",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url}}/powers/1",
+          "host": ["{{base_url}}"],
+          "path": ["powers", "1"]
+        }
+      }
+    },
+    {
+      "name": "Update Power",
+      "request": {
+        "method": "PATCH",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"description\": \"Updated description with at least 20 characters for validation\"\n}"
+        },
+        "url": {
+          "raw": "{{base_url}}/powers/1",
+          "host": ["{{base_url}}"],
+          "path": ["powers", "1"]
+        }
+      }
+    },
+    {
+      "name": "Create Hero Power",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"strength\": \"Average\",\n  \"power_id\": 1,\n  \"hero_id\": 3\n}"
+        },
+        "url": {
+          "raw": "{{base_url}}/hero_powers",
+          "host": ["{{base_url}}"],
+          "path": ["hero_powers"]
+        }
+      }
+    },
+    {
+      "name": "Send Email",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "url": {
+          "raw": "{{base_url}}/send-email",
+          "host": ["{{base_url}}"],
+          "path": ["send-email"]
+        }
+      }
+    }
+  ],
+  "variable": [
+    {
+      "key": "base_url",
+      "value": "http://localhost:5000"
+    }
+  ]
+}
